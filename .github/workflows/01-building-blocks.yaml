@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: "Failed step"
-        run: exit 1
+        run: echo "good socre"
 
       - name: "Say goodbye"
         run: echo "Goodbye Ben"
