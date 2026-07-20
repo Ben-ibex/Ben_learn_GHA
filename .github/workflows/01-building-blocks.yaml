@@ -2,20 +2,23 @@ name: "01-building-blocks"
 run-name: "Test run"
 
 on:
-   push:
-   workflow_dispatch:
+  push:
+  workflow_dispatch:
 
 jobs:
   echo-hello:
     runs-on: ubuntu-latest
 
-    -name: "say hello"
-      run: echo "Hello word"
+    steps:
+      - name: "Say hello"
+        run: echo "Hello world"
 
   echo-goodbye:
     runs-on: ubuntu-latest
 
-    -name: "failed steps"
-      run: echo "i will fail"
-    -name: "say goodbye"
-      run: echo "Good by ben"
+    steps:
+      - name: "Failed step"
+        run: exit 1
+
+      - name: "Say goodbye"
+        run: echo "Goodbye Ben"
