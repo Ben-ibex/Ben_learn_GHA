@@ -1,5 +1,5 @@
 name: "01-building-blocks"
-run-name "Test run"
+run-name: "Test run"
 
 on:
    push:
