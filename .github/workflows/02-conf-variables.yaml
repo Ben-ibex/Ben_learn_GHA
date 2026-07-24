@@ -5,8 +5,9 @@ on:
   workflow_dispatch: 
 
 jobs:
-  job_1:
+  parur:
     runs-on: ubuntu-latest
+    
     step: "good"
       -name: "Good of1"
         run: echo "god"
