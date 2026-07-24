@@ -2,7 +2,6 @@ name: "01-building-blocks"
 run-name: "${{github.actor}} is running Test"
 
 on:
-  push:
   workflow_dispatch:
 env:
   first_name: Benedict
