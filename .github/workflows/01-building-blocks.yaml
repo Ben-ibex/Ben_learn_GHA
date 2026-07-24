@@ -27,7 +27,7 @@ jobs:
         env:
           step1_name: fromstep1
       - name: "testing branch name"
-        if: ${{ env.first_name=='Benedict'}}
+        if: ${{ env.first_name=='Benedic'}}
         run: echo "Testing ${{env.first_name}}"  
 
       - name: "scores step"
