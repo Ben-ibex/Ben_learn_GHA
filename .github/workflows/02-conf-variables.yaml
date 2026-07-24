@@ -7,6 +7,8 @@ on:
 jobs:
   parur:
     runs-on: ubuntu-latest
+    environment:
+      name: DEV
     
     steps:
       - name: "Good of1"
