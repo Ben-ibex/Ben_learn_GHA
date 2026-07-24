@@ -8,6 +8,6 @@ jobs:
   parur:
     runs-on: ubuntu-latest
     
-    step: "good"
-      -name: "Good of1"
+    steps:
+      - name: "Good of1"
         run: echo "god"
