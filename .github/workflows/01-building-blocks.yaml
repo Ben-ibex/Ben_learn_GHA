@@ -23,7 +23,7 @@ jobs:
     steps:
 
       - name: "Failed step"
-        run: echo "good Scores $first_name and $step1_name"
+        run: echo "good Scores $job_name and $step1_name $RUNNER_OS"
         env:
           step1_name: fromstep1
       - name: "testing branch name"
