@@ -7,6 +7,6 @@ on:
 jobs:
   job_1:
     runs-on: ubuntu-latest
-    step: good
-    -name: "Good of1"
-      run: echo"${{vars.DEV_NAME}}"
+    step: "good"
+      -name: "Good of1"
+        run: echo"${{vars.DEV_NAME}}"
