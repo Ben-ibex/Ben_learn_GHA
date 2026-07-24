@@ -23,14 +23,14 @@ jobs:
     steps:
 
       - name: "Failed step"
-        run: echo "good Score $first_name"
+        run: echo "good Scores $first_name and $step1_name"
         env:
           step1_name: fromstep1
       - name: "testing branch name"
         run: echo "Testing"  
 
       - name: "scores step"
-        run: echo "good scores $first_name and $job_name"
+        run: echo "good scores $first_name and $job_name and $step1_name"
 
       - name: "Say goodbye"
         run: echo "Goodbye Ben"
