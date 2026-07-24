@@ -17,16 +17,20 @@ jobs:
 
   echo-goodbye:
     runs-on: ubuntu-latest
+    env:
+      job_name: injobs
 
     steps:
 
       - name: "Failed step"
         run: echo "good Score $first_name"
+        env:
+          step1_name: fromstep1
       - name: "testing branch name"
         run: echo "Testing"  
 
       - name: "scores step"
-        run: echo "good scores $month"
+        run: echo "good scores $month and $job_name"
 
       - name: "Say goodbye"
         run: echo "Goodbye Ben"
