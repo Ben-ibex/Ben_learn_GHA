@@ -30,7 +30,7 @@ jobs:
         run: echo "Testing"  
 
       - name: "scores step"
-        run: echo "good scores $month and $job_name"
+        run: echo "good scores $first_name and $job_name"
 
       - name: "Say goodbye"
         run: echo "Goodbye Ben"
