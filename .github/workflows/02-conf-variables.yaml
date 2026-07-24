@@ -10,4 +10,4 @@ jobs:
     
     steps:
       - name: "Good of1"
-        run: echo "god"
+        run: echo "god ${{vars.DEV_NAME}}"
