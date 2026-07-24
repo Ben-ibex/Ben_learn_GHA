@@ -19,15 +19,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-<<<<<<< HEAD
+
       - name: "Failed step"
         run: echo "good Score $first_name"
       - name: "testing branch name"
         run: echo "Testing"  
-=======
+
       - name: "scores step"
         run: echo "good scores $month"
 
->>>>>>> e067aa9 (test5)
       - name: "Say goodbye"
         run: echo "Goodbye Ben"
