@@ -27,11 +27,11 @@ jobs:
         env:
           step1_name: fromstep1
       - name: "testing branch name"
-        if: ${{ env.first_name=='Benedic'}}
+        if: ${{ env.first_name=='Benedict'}}
         run: echo "Testing ${{env.first_name}}"  
 
       - name: "scores step"
-        run: echo "good scores $first_name and $job_name and $step1_name"
+        run: echo "good scores $first_name and ${{env.job_name}} and $step1_name"
 
       - name: "Say goodbye"
         run: echo "Goodbye Ben"
