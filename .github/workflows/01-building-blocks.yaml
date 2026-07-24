@@ -5,7 +5,7 @@ on:
   push:
   workflow_dispatch:
 env:
-  month: July
+  first_name: Benedict
 
 jobs:
   echo-hello:
@@ -20,7 +20,8 @@ jobs:
 
     steps:
       - name: "Failed step"
-        run: echo "good socre $month"
-
-      - name: "Say goodbye"
+        run: echo "good Score $first_name"
+      -name: "testing branch name"
+        run: echo "Testing"  
+      -name: "Say goodbye"
         run: echo "Goodbye Ben"
