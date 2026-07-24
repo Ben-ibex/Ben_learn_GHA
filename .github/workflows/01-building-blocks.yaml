@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: "Failed step"
         run: echo "good Score $first_name"
-      -name: "testing branch name"
+      - name: "testing branch name"
         run: echo "Testing"  
-      -name: "Say goodbye"
+      - name: "Say goodbye"
         run: echo "Goodbye Ben"
