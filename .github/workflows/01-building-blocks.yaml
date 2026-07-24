@@ -5,7 +5,7 @@ on:
   push:
   workflow_dispatch:
 env:
-  $month='July'
+  $month=July
 
 jobs:
   echo-hello:
