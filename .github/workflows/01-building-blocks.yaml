@@ -1,9 +1,11 @@
 name: "01-building-blocks"
-run-name: "${{github.actor}}is running Test"
+run-name: "${{github.actor}} is running Test"
 
 on:
   push:
   workflow_dispatch:
+env:
+  $month='July'
 
 jobs:
   echo-hello:
@@ -18,7 +20,7 @@ jobs:
 
     steps:
       - name: "Failed step"
-        run: echo "good socre"
+        run: echo "good socre $month"
 
       - name: "Say goodbye"
         run: echo "Goodbye Ben"
