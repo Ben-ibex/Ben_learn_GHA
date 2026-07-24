@@ -2,14 +2,21 @@ name: "configuration files"
 
 on:
   push:
-  workflow_dispatch: 
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Environments "
+        required: true
+        type: choice
+        options:
+          - DEV
+          - TEST
 
 jobs:
   parur:
     runs-on: ubuntu-latest
-    environment:
-      name: DEV
     
     steps:
       - name: "Good of1"
+       if: $${{input.environment.DEV=="DEV"}}
         run: echo "god ${{vars.DEV_NAME}}"
