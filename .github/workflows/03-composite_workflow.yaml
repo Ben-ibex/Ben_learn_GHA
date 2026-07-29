@@ -5,10 +5,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  run-on: ubuntu-latest
+ school:
 
-  steps:
-    -uses: actions/checkout@v4
+    run-on: ubuntu-latest
 
-    -uses: ./.github/actions/test-app
+    steps:
+      -uses: actions/checkout@v4
+
+      -uses: ./.github/actions/test-app
 
