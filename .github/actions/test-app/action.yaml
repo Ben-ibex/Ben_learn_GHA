@@ -1,10 +1,14 @@
 name: Test C App
 
-runs: composite
-steps:
-  - name:  wake up
-   run: echo  " I wake up early morning Every Day"
-  
-  - name: buresh up
-    run: echo "buring is a good hapit"
-    
+description: "tet"
+
+runs:
+  using: composite
+
+  steps:
+    - uses: actions/checkout@v4
+
+    - name: wakeup
+      shell: bash
+      run: echo "wakeup"
+
