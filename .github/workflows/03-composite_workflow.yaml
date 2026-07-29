@@ -1,0 +1,14 @@
+name: 03-composite workflow run
+
+on: 
+  push:
+  workflow_dispatch:
+
+jobs:
+  run-on: ubuntu-latest
+
+  steps:
+    -uses: actions/checkout@v4
+
+    -uses: ./.github/actions/test-app
+

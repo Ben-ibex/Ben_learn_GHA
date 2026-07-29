@@ -1,0 +1,10 @@
+name: Test C App
+
+runs: composite
+steps:
+  - name:  wake up
+   run: echo  " I wake up early morning Every Day"
+  
+  - name: buresh up
+    run: echo "buring is a good hapit"
+    
