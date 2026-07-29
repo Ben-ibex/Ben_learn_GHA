@@ -11,10 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: from there
+      
       - uses: ./.github/actions/test-app
 
       - name:  going school
-        shell: bash
         run: echo "going to school"
 
