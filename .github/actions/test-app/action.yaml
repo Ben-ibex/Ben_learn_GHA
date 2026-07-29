@@ -9,4 +9,7 @@ runs:
     - name: wakeup
       shell: bash
       run: echo "wakeup"
+    - name: brush your teeth
+      shell: bash
+      run: echo "brush your teeth"
 

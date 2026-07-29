@@ -13,3 +13,7 @@ jobs:
 
       - uses: ./.github/actions/test-app
 
+      - name:  going school
+        shell: bash
+        run: echo "going to school"
+
